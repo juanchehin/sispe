@@ -7,7 +7,7 @@ class DBConnection{
     private $host = 'localhost';
     private $username = 'root';
     private $password = '';
-    private $database = 'omos';
+    private $database = 'sispe';
     
     public $conn;
     

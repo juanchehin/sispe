@@ -61,8 +61,10 @@
 <!-- Footer-->
 <footer class="py-5 bg-gradient-danger">
             <div class="container">
-              <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
-              <p class="m-0 text-center text-white"> <a href="mailto:info@compubinario.com">compubinario</a></p>
+              <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?>  <script>
+                                document.write(new Date().getFullYear());
+                            </script> Todos los derechos reservados</a></p>
+              <p class="m-0 text-center text-white"> <a href="https://juanchehin.github.io/cv/" _blank>CV ingenieria</a></p>
           </div>
         </footer>
 
