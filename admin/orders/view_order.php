@@ -84,7 +84,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                         while($row = $order_items->fetch_assoc()):
                             $gt += $row['price'] * $row['quantity'];
                         ?>
-                        <div class="list-group-item cart-item" data-id = '<?= $row['id'] ?>'  data-max = '<?= format_num($row['available'], 0) ?>'>
+                        <div class="list-group-item cart-item" data-max = '<?= format_num($row['available'], 0) ?>'>
                             <div class="d-flex w-100 align-items-center">
                                 <div class="col-2 text-center">
                                     <img src="<?= validate_image($row['image_path']) ?>" alt="" class="img-thumbnail border p-0 product-logo">

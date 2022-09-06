@@ -31,13 +31,15 @@
                     <div class="carousel-inner">
                         <?php 
                             $upload_path = "uploads/banner";
+
                             if(is_dir(base_app.$upload_path)): 
-                            $file= scandir(base_app.$upload_path);
-                            $_i = 0;
-                                foreach($file as $img):
-                                    if(in_array($img,array('.','..')))
-                                        continue;
-                            $_i++;
+
+                                $file= scandir(base_app.$upload_path);
+                                $_i = 0;
+                                    foreach($file as $img):
+                                        if(in_array($img,array('.','..')))
+                                            continue;
+                                $_i++;
                                 
                         ?>
                         <div class="carousel-item h-100 <?php echo $_i == 1 ? "Activo" : '' ?>">
