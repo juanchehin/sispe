@@ -41,16 +41,16 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="card rounded-0">
                 <div class="card-body">
-                    <h3 class="text-center"><b>Contact Us</b></h3>
+                    <h3 class="text-center"><b>Contacto</b></h3>
                     <center><hr style="height:2px;width:5em;opacity:1" class="bg-danger"></center>
                     <dl>
                         <dt class="text-muted">Email</dt>
                         <dd class="pl-3"><?= $_settings->info('email') ?></dd>
-                        <dt class="text-muted">Telephone #</dt>
+                        <dt class="text-muted">Telefono</dt>
                         <dd class="pl-3"><?= $_settings->info('phone') ?></dd>
-                        <dt class="text-muted">Mobile #</dt>
+                        <dt class="text-muted">Mobil</dt>
                         <dd class="pl-3"><?= $_settings->info('mobile') ?></dd>
-                        <dt class="text-muted">Address</dt>
+                        <dt class="text-muted">Direccion</dt>
                         <dd class="pl-3"><?= $_settings->info('address') ?></dd>
                     </dl>
                 </div>

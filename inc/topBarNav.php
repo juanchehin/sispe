@@ -21,10 +21,10 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=products">Products</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=about">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=contact">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=products">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=about">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=contact">Contacto</a></li>
                         <?php 
                         if($_settings->userdata('id') != '' && $_settings->userdata('id') != 2):
                           $cart = $conn->query("SELECT SUM(quantity) FROM `cart_list` where customer_id = '{$_settings->userdata('id')}' ")->fetch_array()[0];
