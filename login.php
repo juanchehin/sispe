@@ -25,7 +25,7 @@
   <!-- /.login-logo -->
   <div class="card card-navy my-2">
     <div class="card-body">
-      <p class="login-box-msg">Please enter your credentials</p>
+      <p class="login-box-msg">Acceso</p>
       <form id="ulogin-form" action="" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" name="email" autofocus placeholder="Email">
@@ -45,11 +45,11 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <a href="<?php echo base_url ?>">Go to Website</a>
+            <a href="<?php echo base_url ?>">Ir al sitio web</a>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Acceso</button>
           </div>
           <!-- /.col -->
           <div class="col-12 text-center">
