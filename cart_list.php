@@ -13,8 +13,8 @@ if($_settings->userdata('id') == '' || $_settings->userdata('login_type') != 2){
 </style>
 <section class="py-3">
     <div class="container">
-        <div class="content px-3 py-5 bg-gradient-maroon">
-            <h3 class=""><b>Cart List</b></h3>
+        <div class="content px-3 py-5 bg-gradient-black">
+            <h3 class=""><b>Carrito</b></h3>
         </div>
         <div class="row mt-n4  justify-content-center align-items-center flex-column">
             <div class="col-lg-10 col-md-11 col-sm-12 col-xs-12">
@@ -58,11 +58,11 @@ if($_settings->userdata('id') == '' || $_settings->userdata('login_type') != 2){
                                 <?php endwhile; ?>
                             </div>
                             <?php if($cart->num_rows <= 0): ?>
-                                <h5 class="text-center text-muted">Cart has is empty.</h5>
+                                <h5 class="text-center text-muted">Carrito vacio.</h5>
                             <?php endif; ?>
                             <div class="d-flex justify-content-end py-3">
                                 <div class="col-auto">
-                                    <h3><b>Grand Total: <?= format_num($gt,2) ?></b></h3>
+                                    <h3><b>Total: <?= format_num($gt,2) ?></b></h3>
                                 </div>
                             </div>
                             <?php if($gt > 0): ?>

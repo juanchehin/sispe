@@ -32,7 +32,7 @@
                         $cart = isset($cart) && $cart > 0 ? $cart : '';
                         ?>
                         <?php if($_settings->userdata('id') != '' && $_settings->userdata('login_type') == 2): ?>
-                          <li class="nav-item"><a class="nav-link text-white" href="./?p=cart_list">Cart <span class="ml-2 badge badge-primary"><?= $cart > 0 ? format_num($cart) : '' ?></span></a></li>
+                          <li class="nav-item"><a class="nav-link text-white" href="./?p=cart_list">Carrito <span class="ml-2 badge badge-primary"><?= $cart > 0 ? format_num($cart) : '' ?></span></a></li>
                       <?php endif;?>
                     </ul>
                     <div class="d-flex align-items-center">

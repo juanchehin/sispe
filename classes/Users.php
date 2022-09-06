@@ -159,9 +159,9 @@ Class Users extends DBConnection {
 			$resp['status'] = 'success';
 			$resp['uid'] = $uid;
 			if(!empty($id))
-				$resp['msg'] = 'User Details has been updated successfully';
+				$resp['msg'] = 'Actualizacion exitosa';
 			else
-				$resp['msg'] = 'Your Account has been created successfully';
+				$resp['msg'] = 'Tu cuenta se creo exitosamente';
 
 			if(!empty($_FILES['img']['tmp_name'])){
 				if(!is_dir(base_app."uploads/customers"))
