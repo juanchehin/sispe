@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="card-body">
                                         <div style="line-height:1em">
-                                            <div class="card-title w-100 mb-0"><?= $row['Nombre'] ?></div>
+                                            <div class="card-title w-100 mb-0"><?= $row['name'] ?></div>
                                             <div class="card-description w-100"><small class="text-muted"><?= $row['brand'] ?></small></div>
                                             <div class="card-description w-100"><small class="text-muted">Stock: <?= format_num($row['available'],0) ?></small></div>
                                         </div>
