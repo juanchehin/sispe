@@ -11,6 +11,7 @@
 <?php endif;?>
 <body>
 <?php require_once('inc/topBarNav.php') ?>
+
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>
 <?php 
     if(!file_exists($page.".php") && !is_dir($page)){
@@ -23,6 +24,7 @@
 
     }
 ?>
+
 <?php require_once('inc/footer.php') ?>
 
   <div class="modal fade" id="uni_modal" role='dialog'>
@@ -34,7 +36,7 @@
       <div class="modal-body">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Save</button>
+        <button type="button" class="btn btn-primary" id='submit' onclick="$('#uni_modal form').submit()">Guardar</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
       </div>
       </div>
@@ -66,7 +68,7 @@
     <div class="modal-dialog modal-md modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title">Confirmation</h5>
+        <h5 class="modal-title">Confirmacion</h5>
       </div>
       <div class="modal-body">
         <div id="delete_content"></div>

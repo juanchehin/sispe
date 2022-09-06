@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="./">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="./?p=products">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="./?p=./products">Productos</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="./?p=about">Acerca de</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="./?p=contact">Contacto</a></li>
                         <?php 
@@ -46,15 +46,15 @@
                         <div class="dropdown-menu" role="menu">
                           <a class="dropdown-item" href="<?php echo base_url.'?p=user' ?>"><span class="fa fa-user"></span>Mi cuenta</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="<?php echo base_url.'?p=orders' ?>"><span class="fa fa-table"></span> My Orders</a>
+                          <a class="dropdown-item" href="<?php echo base_url.'?p=orders' ?>"><span class="fa fa-table"></span>Mis pedidos</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="<?php echo base_url.'/classes/Login.php?f=logout_customer' ?>"><span class="fas fa-sign-out-alt"></span> Logout</a>
                         </div>
                     </div>
                     <?php else: ?>
                         <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./login.php">Login</a>
-                        <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./register.php">Register</a>
-                        <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./admin">Admin Panel</a>
+                        <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./register.php">Registro</a>
+                        <a class="font-weight-bolder text-light mx-2 text-decoration-none" href="./admin">Panel Admin</a>
                     <?php endif;?>
                     </div>
                 </div>

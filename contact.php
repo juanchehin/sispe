@@ -48,7 +48,7 @@
                         <dd class="pl-3"><?= $_settings->info('email') ?></dd>
                         <dt class="text-muted">Telefono</dt>
                         <dd class="pl-3"><?= $_settings->info('phone') ?></dd>
-                        <dt class="text-muted">Mobil</dt>
+                        <dt class="text-muted">Movil</dt>
                         <dd class="pl-3"><?= $_settings->info('mobile') ?></dd>
                         <dt class="text-muted">Direccion</dt>
                         <dd class="pl-3"><?= $_settings->info('address') ?></dd>
