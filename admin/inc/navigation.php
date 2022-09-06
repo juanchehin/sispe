@@ -1,12 +1,12 @@
 <style>
-  [class*="sidebar-light-"] .nav-treeview > .nav-item > .nav-link.active, [class*="sidebar-light-"] .nav-treeview > .nav-item > .nav-link.active:hover {
+  [class*="sidebar-light-"] .nav-treeview > .nav-item > .nav-link.Activo, [class*="sidebar-light-"] .nav-treeview > .nav-item > .nav-link.Activo:hover {
       color: #ffffff !important;
   }
 </style>
 <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-light-maroon navbar-light elevation-4 sidebar-no-expand">
         <!-- Brand Logo -->
-        <a href="<?php echo base_url ?>admin" class="brand-link bg-maroon text-sm">
+        <a href="<?php echo base_url ?>admin" class="brand-link bg-black text-sm">
         <img src="<?php echo validate_image($_settings->info('logo'))?>" alt="Store Logo" class="brand-image img-circle elevation-3" style="opacity: .8;width: 1.5rem;height: 1.5rem;max-height: unset">
         <span class="brand-text font-weight-light"><?php echo $_settings->info('short_name') ?></span>
         </a>
@@ -71,31 +71,31 @@
                         <li class="nav-item">
                           <a href="./?page=orders" class="nav-link tree-item nav-orders">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>List All</p>
+                            <p>Listar todo</p>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a href="./?page=orders&status=0" class="nav-link tree-item nav-orders_0">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Pending</p>
+                            <p>Pendiente</p>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a href="./?page=orders&status=1" class="nav-link tree-item nav-orders_1">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Packed</p>
+                            <p>Empaquetado</p>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a href="./?page=orders&status=2" class="nav-link tree-item nav-orders_2">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Out for Delivery</p>
+                            <p>Para delivery</p>
                           </a>
                         </li>
                         <li class="nav-item">
                           <a href="./?page=orders&status=3" class="nav-link tree-item nav-orders_3">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Done</p>
+                            <p>Hecho</p>
                           </a>
                         </li>
                       </ul>
@@ -172,9 +172,9 @@
       page = status != '' ? page + "_" + status : page;
       console.log($('.nav-link.nav-'+page)[0])
       if($('.nav-link.nav-'+page).length > 0){
-             $('.nav-link.nav-'+page).addClass('active')
+             $('.nav-link.nav-'+page).addClass('Activo')
         if($('.nav-link.nav-'+page).hasClass('tree-item') == true){
-            $('.nav-link.nav-'+page).addClass('active')
+            $('.nav-link.nav-'+page).addClass('Activo')
           $('.nav-link.nav-'+page).closest('.nav-treeview').parent().addClass('menu-open')
         }
         if($('.nav-link.nav-'+page).hasClass('nav-is-tree') == true){
@@ -182,6 +182,6 @@
         }
 
       }
-      $('.nav-link.active').addClass('bg-gradient-maroon')
+      $('.nav-link.Activo').addClass('bg-gradient-maroon')
     })
   </script>

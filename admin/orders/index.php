@@ -26,12 +26,12 @@ $stat_arr = ['Pending Orders', 'Packed Orders', 'Our for Delivery', 'Completed O
 				<thead>
 					<tr>
 						<th class="p-1 text-center">#</th>
-						<th class="p-1 text-center">Date Ordered</th>
-						<th class="p-1 text-center">Code</th>
-						<th class="p-1 text-center">Customer</th>
-						<th class="p-1 text-center">Total Amount</th>
-						<th class="p-1 text-center">Status</th>
-						<th class="p-1 text-center">Action</th>
+						<th class="p-1 text-center">Fecha</th>
+						<th class="p-1 text-center">Codigo</th>
+						<th class="p-1 text-center">Cliente</th>
+						<th class="p-1 text-center">Total Monto</th>
+						<th class="p-1 text-center">Estado</th>
+						<th class="p-1 text-center">Accion</th>
 					</tr>
 				</thead>
 				<tbody>

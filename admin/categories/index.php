@@ -13,9 +13,9 @@
 </style>
 <div class="card card-outline rounded-0 card-danger">
 	<div class="card-header">
-		<h3 class="card-title">List of Categories</h3>
+		<h3 class="card-title">Lista de categorias</h3>
 		<div class="card-tools">
-			<a href="./?page=categories/manage_category" id="create_new" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
+			<a href="./?page=categories/manage_category" id="create_new" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>Nueva categoria</a>
 		</div>
 	</div>
 	<div class="card-body">
@@ -32,11 +32,11 @@
 				<thead>
 					<tr>
 						<th>#</th>
-						<th>Date Created</th>
-						<th>Name</th>
-						<th>Description</th>
-						<th>Status</th>
-						<th>Action</th>
+						<th>Fecha</th>
+						<th>Nombre</th>
+						<th>Descripcion</th>
+						<th>Estado</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -52,9 +52,9 @@
 							<td><p class="mb-0 truncate-1"><?php echo ($row['description']) ?></p></td>
 							<td class="text-center">
                                 <?php if($row['status'] == 1): ?>
-                                    <span class="badge badge-success px-3 rounded-pill">Active</span>
+                                    <span class="badge badge-success px-3 rounded-pill">Activo</span>
                                 <?php else: ?>
-                                    <span class="badge badge-danger px-3 rounded-pill">Inactive</span>
+                                    <span class="badge badge-danger px-3 rounded-pill">Inactivo</span>
                                 <?php endif; ?>
                             </td>
 							<td align="center">

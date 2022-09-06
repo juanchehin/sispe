@@ -13,7 +13,7 @@
 </style>
 <div class="card card-outline rounded-0 card-danger">
 	<div class="card-header">
-		<h3 class="card-title">Inventory</h3>
+		<h3 class="card-title">Inventario</h3>
 	</div>
 	<div class="card-body">
         <div class="container-fluid">

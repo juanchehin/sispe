@@ -21,22 +21,22 @@ if(isset($_GET['id'])){
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="form-group">
-							<label for="firstname" class="control-label">First Name</label>
+							<label for="firstname" class="control-label">Primer Nombre</label>
 							<input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="firstname" id="firstname" value="<?= isset($firstname) ? $firstname : '' ?>">
 						</div>
 						<div class="form-group">
-							<label for="middlename" class="control-label">Middle Name</label>
+							<label for="middlename" class="control-label">Segundo Nombre</label>
 							<input type="text" class="form-control form-control-sm rounded-0" name="middlename" id="middlename" value="<?= isset($middlename) ? $middlename : '' ?>">
 						</div>
 						<div class="form-group">
-							<label for="lastname" class="control-label">Last Name</label>
+							<label for="lastname" class="control-label">Apellido</label>
 							<input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="lastname" id="lastname" value="<?= isset($lastname) ? $lastname : '' ?>">
 						</div>
 						<div class="form-group">
-							<label for="gender" class="control-label">Gender</label>
+							<label for="gender" class="control-label">Genero</label>
 							<select class="custom-select custom-select-sm rounded-0" reqiured="" name="gender" id="gender">
-							<option <?= isset($gender) && $gender == 'Male' ? "selected" : '' ?>>Male</option>
-							<option <?= isset($gender) && $gender == 'Female' ? "selected" : '' ?>>Female</option>
+							<option <?= isset($gender) && $gender == 'Male' ? "selected" : '' ?>>Hombre</option>
+							<option <?= isset($gender) && $gender == 'Female' ? "selected" : '' ?>>Mujer</option>
 							</select>
 						</div>
 					</div>
@@ -46,18 +46,18 @@ if(isset($_GET['id'])){
 							<input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="email" id="email" value="<?= isset($email) ? $email : '' ?>">
 						</div>
 						<div class="form-group">
-							<label for="contact" class="control-label">Contact</label>
+							<label for="contact" class="control-label">Contacto</label>
 							<input type="text" class="form-control form-control-sm rounded-0" reqiured="" name="contact" id="contact" value="<?= isset($contact) ? $contact : '' ?>">
 						</div>
 						<div class="form-group">
-							<label for="password" class="control-label">New Password</label>
+							<label for="password" class="control-label">Nueva Contraseña</label>
 							<div class="input-group input-group-sm">
 								<input type="password" class="form-control form-control-sm rounded-0" name="password" id="password">
 								<button tabindex="-1" class="btn btn-outline-secondary btn-sm rounded-0 pass_view" type="button"><i class="fa fa-eye-slash"></i></button>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="cpassword" class="control-label">Confirm New Password</label>
+							<label for="cpassword" class="control-label">Confirmar contraseña</label>
 							<div class="input-group input-group-sm">
 								<input type="password" class="form-control form-control-sm rounded-0" id="cpassword">
 								<button tabindex="-1" class="btn btn-outline-secondary btn-sm rounded-0 pass_view" type="button"><i class="fa fa-eye-slash"></i></button>
@@ -69,7 +69,7 @@ if(isset($_GET['id'])){
 							<label for="" class="control-label">Avatar</label>
 							<div class="custom-file">
 								<input type="file" class="custom-file-input rounded-0" id="customFile" name="img" onchange="displayImg(this,$(this))" accept="image/png, image/jpeg">
-								<label class="custom-file-label rounded-0" for="customFile">Choose file</label>
+								<label class="custom-file-label rounded-0" for="customFile">Seleccionar archivo</label>
 							</div>
 						</div>
 					</div>
@@ -85,8 +85,8 @@ if(isset($_GET['id'])){
 	<div class="card-footer">
 			<div class="col-md-12">
 				<div class="row">
-					<button class="btn btn-sm btn-primary rounded-0 mr-3" form="update-form">Save User Details</button>
-					<a href="./?page=customers/" class="btn btn-sm btn-default border rounded-0" form="update-form"><i class="fa fa-angle-left"></i> Cancel</a>
+					<button class="btn btn-sm btn-primary rounded-0 mr-3" form="update-form">Guardar</button>
+					<a href="./?page=customers/" class="btn btn-sm btn-default border rounded-0" form="update-form"><i class="fa fa-angle-left"></i> Cancelar</a>
 				</div>
 			</div>
 		</div>

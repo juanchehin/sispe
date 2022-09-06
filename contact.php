@@ -21,7 +21,7 @@
                     $_i++;
                         
                 ?>
-                <div class="carousel-item h-100 <?php echo $_i == 1 ? "active" : '' ?>">
+                <div class="carousel-item h-100 <?php echo $_i == 1 ? "Activo" : '' ?>">
                     <img src="<?php echo validate_image($upload_path.'/'.$img) ?>" class="d-block w-100  h-100" alt="<?php echo $img ?>">
                 </div>
                 <?php endforeach; ?>

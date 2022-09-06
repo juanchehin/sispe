@@ -13,7 +13,7 @@
 </style>
 <div class="card card-outline rounded-0 card-danger">
 	<div class="card-header">
-		<h3 class="card-title">List of Products</h3>
+		<h3 class="card-title">Listado de productos</h3>
 		<div class="card-tools">
 			<a href="./?page=products/manage_product" id="create_new" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Ingresar Nuevo</a>
 		</div>

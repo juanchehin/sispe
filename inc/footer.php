@@ -59,7 +59,7 @@
   })
 </script>
 <!-- Footer-->
-<footer class="py-5 bg-gradient-danger">
+<footer class="py-5 bg-gradient-dark">
             <div class="container">
               <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?>  <script>
                                 document.write(new Date().getFullYear());

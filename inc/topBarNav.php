@@ -44,7 +44,7 @@
                           <span class="sr-only">Toggle Dropdown</span>
                         </button>
                         <div class="dropdown-menu" role="menu">
-                          <a class="dropdown-item" href="<?php echo base_url.'?p=user' ?>"><span class="fa fa-user"></span> My Account</a>
+                          <a class="dropdown-item" href="<?php echo base_url.'?p=user' ?>"><span class="fa fa-user"></span>Mi cuenta</a>
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="<?php echo base_url.'?p=orders' ?>"><span class="fa fa-table"></span> My Orders</a>
                           <div class="dropdown-divider"></div>

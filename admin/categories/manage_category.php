@@ -9,7 +9,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 }
 ?>
 <div class="content py-5 px-3 bg-gradient-danger">
-	<h2><b><?= isset($id) ? "Update Category Details" : "New Category Entry" ?></b></h2>
+	<h2><b><?= isset($id) ? "Update Category Details" : "Nueva categoria" ?></b></h2>
 </div>
 <div class="row mt-lg-n4 mt-md-n4 justify-content-center">
 	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
@@ -20,26 +20,26 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 					<form action="" id="category-form">
 						<input type="hidden" name ="id" value="<?php echo isset($id) ? $id : '' ?>">
 						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<label for="name" class="control-label">Name</label>
+							<label for="name" class="control-label">Nombre</label>
 							<input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" value="<?php echo isset($name) ? $name : ''; ?>"  required/>
 						</div>
 						<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<label for="description" class="control-label">Description</label>
+							<label for="description" class="control-label">Descripcion</label>
 							<textarea rows="3" name="description" id="description" class="form-control form-control-sm rounded-0" required><?php echo isset($description) ? $description : ''; ?></textarea>
 						</div>
 						<div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<label for="status" class="control-label">Status</label>
+							<label for="status" class="control-label">Estado</label>
 							<select name="status" id="status" class="form-control form-control-sm rounded-0" required="required">
-								<option value="1" <?= isset($status) && $status == 1 ? 'selected' : '' ?>>Active</option>
-								<option value="0" <?= isset($status) && $status == 0 ? 'selected' : '' ?>>Inactive</option>
+								<option value="1" <?= isset($status) && $status == 1 ? 'selected' : '' ?>>Activo</option>
+								<option value="0" <?= isset($status) && $status == 0 ? 'selected' : '' ?>>Inactivo</option>
 							</select>
 						</div>
 					</form>
 				</div>
 			</div>
 			<div class="card-footer py-1 text-center">
-				<button class="btn btn-primary btn-sm bg-gradient-primary btn-flat" form="category-form"><i class="fa fa-save"></i> Save</button>
-				<a class="btn btn-light btn-sm bg-gradient-light border btn-flat" href="./?page=categories"><i class="fa fa-times"></i> Cancel</a>
+				<button class="btn btn-primary btn-sm bg-gradient-primary btn-flat" form="category-form"><i class="fa fa-save"></i> Guardar</button>
+				<a class="btn btn-light btn-sm bg-gradient-light border btn-flat" href="./?page=categories"><i class="fa fa-times"></i> Cancelar</a>
 			</div>
 		</div>
 	</div>

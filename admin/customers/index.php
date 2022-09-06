@@ -13,7 +13,7 @@
 </style>
 <div class="card card-outline rounded-0 card-danger">
 	<div class="card-header">
-		<h3 class="card-title">List of Customers</h3>
+		<h3 class="card-title">Lista de clientes</h3>
 		<div class="card-tools">
 			<a href="./?page=customers/manage_customer" id="create_new" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
 		</div>
@@ -32,11 +32,11 @@
 				<thead>
 					<tr>
 						<th>#</th>
-						<th>Date Updated</th>
+						<th>Fecha actualizacion</th>
 						<th>Avatar</th>
-						<th>Name</th>
+						<th>Nombre</th>
 						<th>Email</th>
-						<th>Action</th>
+						<th></th>
 					</tr>
 				</thead>
 				<tbody>
